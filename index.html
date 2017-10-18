@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>&lrm;</title>
+    <title>Shade of Red</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
         body {
-            background-color: #ff3e3e;
+            background-color: #fff;
         }
-        
+
         .c {
             position: absolute;
             top: 50%;
@@ -22,15 +22,16 @@
             font-family: 'Roboto', sans-serif;
             color: #f1f1f1;
             font-size: 50px;
+            filter: hue-rotate(50deg) brightness(2);
         }
     </style>
 
 </head>
 
-<body>
+<body id="bk_c">
 
-    <div class="c">#ff3e3e</div>
-
+    <div class="c" id="hexcolor">#ff3e3e</div>
+    <script src="ff3e3e.js"></script>
 </body>
 
 </html>
