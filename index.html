@@ -8,10 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88791541-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-88791541-8');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <style>
         body {
             background-color: #fff;
+            font-family: 'Nunito', sans-serif;
         }
 
         .c {
@@ -19,18 +29,35 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            font-family: 'Roboto', sans-serif;
             color: #f1f1f1;
             font-size: 50px;
             filter: hue-rotate(-150deg) brightness(2);
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #rgbcolor {
+            font-size: 1.3rem;
+        }
+
+        #refresh {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            cursor: pointer;
         }
     </style>
 
 </head>
 
 <body id="bk_c">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" id="refresh"><title>New Color</title><path class="refresh-shape" d="M25,2.22A22.64,22.64,0,0,0,12.82,5.76L8.06,1V14.35H21.41l-5.3-5.3A18.08,18.08,0,0,1,25,6.71,18.32,18.32,0,0,1,43.29,25,18.06,18.06,0,0,1,42,31.79l3.93,2.29A22.78,22.78,0,0,0,25,2.22Z"/><path class="refresh-shape" d="M33.89,40.94A18.11,18.11,0,0,1,25,43.29,18.23,18.23,0,0,1,7.91,18.56L4,16.2a22.76,22.76,0,0,0,33.18,28L41.94,49V35.65H28.59Z"/></svg>
 
-    <div class="c" id="hexcolor">#ff3e3e</div>
+    <div class="c"><p id="hexcolor">#ff3e3e</p><p id="rgbcolor"></p></div>
     <script src="ff3e3e.js"></script>
 </body>
 
